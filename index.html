@@ -21,16 +21,40 @@
       <input
         type="email"
         class="form-control w-50"
-        id="drink-input"
-        placeholder="Search your drink..."
+        id="meal-input"
+        placeholder="Search your meal by letter..."
       />
       <button
         onclick="drinkSearch()"
         type="button"
-        class="btn ms-2 btn-outline-success"
+        class="btn ms-2 btn-outline-dark"
       >
         Search
       </button>
+    </div>
+    <section id="meals-container" class="row mt-4 g-3"></section>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="modal-info" class="modal-body"></div>
+        </div>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
